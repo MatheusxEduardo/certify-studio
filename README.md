@@ -52,6 +52,7 @@ Dentro de cada módulo será aplicado o padrão Controller–Service–Repositor
 - **Model:** representa as entidades do domínio.
 
 Entidades de persistência não serão retornadas diretamente pela API.
+A decisão arquitetural e suas justificativas estão registradas em [ADR 0001 — Use a Modular Monolith Architecture](docs/adr/0001-use-modular-monolith-architecture.md).
 
 ## Tecnologias planejadas
 
@@ -77,8 +78,10 @@ A tecnologia de geração de PDF será escolhida após a realização de um test
 ```text
 certify-studio/
 ├── docs/
+│   ├── adr/
+│   │   └── 0001-use-modular-monolith-architecture.md
 │   └── MVP_SCOPE.md
 ├── .gitignore
-├── LICENSE
 ├── README.md
 └── ROADMAP.md
+```
