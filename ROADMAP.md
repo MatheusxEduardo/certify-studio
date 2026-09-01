@@ -9,15 +9,15 @@ Objetivo: entregar uma jornada completa de emissão, armazenamento e validação
 ### Planejamento e arquitetura
 
 - [x] Definir o escopo reduzido do MVP.
-- [ ] Registrar a arquitetura inicial.
+- [x] Registrar a arquitetura inicial.
 - [ ] Definir as principais entidades e relacionamentos.
-- [ ] Realizar o spike técnico de geração de PDF.
-- [ ] Escolher e documentar a biblioteca de PDF.
+- [x] Realizar o spike técnico de geração de PDF.
+- [x] Escolher e documentar a biblioteca de PDF.
 
 ### Estrutura do backend
 
-- [ ] Criar o projeto com Java 21 e Spring Boot.
-- [ ] Configurar o Maven Wrapper.
+- [x] Criar o projeto com Java 21 e Spring Boot.
+- [x] Configurar o Maven Wrapper.
 - [ ] Organizar o monólito modular por funcionalidade.
 - [ ] Criar endpoint de verificação de saúde.
 - [ ] Configurar tratamento global de erros.
@@ -46,7 +46,7 @@ Objetivo: entregar uma jornada completa de emissão, armazenamento e validação
 - [ ] Implementar emissão individual.
 - [ ] Criar snapshot imutável da emissão.
 - [ ] Implementar idempotência.
-- [ ] Criar template HTML/CSS fixo.
+- [ ] Criar layout fixo do certificado com PDFBox.
 - [ ] Gerar o certificado em PDF.
 - [ ] Calcular o hash SHA-256.
 - [ ] Armazenar o documento.
