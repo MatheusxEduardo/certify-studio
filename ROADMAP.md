@@ -19,7 +19,7 @@ Objetivo: entregar uma jornada completa de emissão, armazenamento e validação
 - [x] Criar o projeto com Java 21 e Spring Boot.
 - [x] Configurar o Maven Wrapper.
 - [ ] Organizar o monólito modular por funcionalidade.
-- [ ] Criar endpoint de verificação de saúde.
+- [x] Criar endpoint de verificação de saúde.
 - [ ] Configurar tratamento global de erros.
 - [ ] Configurar OpenAPI/Swagger.
 
