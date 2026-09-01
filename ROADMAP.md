@@ -10,7 +10,7 @@ Objetivo: entregar uma jornada completa de emissão, armazenamento e validação
 
 - [x] Definir o escopo reduzido do MVP.
 - [x] Registrar a arquitetura inicial.
-- [ ] Definir as principais entidades e relacionamentos.
+- [x] Definir as principais entidades e relacionamentos.
 - [x] Realizar o spike técnico de geração de PDF.
 - [x] Escolher e documentar a biblioteca de PDF.
 
@@ -22,14 +22,15 @@ Objetivo: entregar uma jornada completa de emissão, armazenamento e validação
 - [x] Criar endpoint de verificação de saúde.
 - [ ] Configurar tratamento global de erros.
 - [ ] Configurar OpenAPI/Swagger.
+- [ ] Configurar autenticação e autorização para operações privadas.
 
 ### Banco de dados e infraestrutura
 
-- [ ] Configurar PostgreSQL.
-- [ ] Configurar Docker Compose.
+- [x] Configurar PostgreSQL.
+- [x] Configurar Docker Compose.
 - [ ] Configurar Flyway.
 - [ ] Criar as migrations iniciais.
-- [ ] Configurar variáveis de ambiente.
+- [ ] Configurar variáveis de ambiente da aplicação Spring Boot.
 - [ ] Documentar a execução local.
 
 ### Cadastros
@@ -50,7 +51,7 @@ Objetivo: entregar uma jornada completa de emissão, armazenamento e validação
 - [ ] Gerar o certificado em PDF.
 - [ ] Calcular o hash SHA-256.
 - [ ] Armazenar o documento.
-- [ ] Disponibilizar o PDF para download.
+- [ ] Disponibilizar o PDF para download privado e autorizado.
 
 ### Validação e revogação
 
@@ -58,6 +59,7 @@ Objetivo: entregar uma jornada completa de emissão, armazenamento e validação
 - [ ] Gerar QR Code para validação.
 - [ ] Implementar consulta pública.
 - [ ] Proteger informações pessoais na consulta pública.
+- [ ] Impedir acesso público ao PDF original.
 - [ ] Implementar revogação com motivo e data.
 - [ ] Preservar o histórico do certificado revogado.
 
@@ -75,7 +77,7 @@ Objetivo: entregar uma jornada completa de emissão, armazenamento e validação
 Objetivo: reutilizar o fluxo confiável da emissão individual para processar vários certificados.
 
 - [ ] Disponibilizar uma planilha-modelo `.xlsx`.
-- [ ] Implementar upload de planilha Excel.
+- [ ] Implementar processamento local de planilha Excel sem autenticação ou persistência permanente.
 - [ ] Validar formato e colunas obrigatórias.
 - [ ] Validar individualmente cada linha.
 - [ ] Exibir uma prévia antes da emissão.
@@ -83,8 +85,9 @@ Objetivo: reutilizar o fluxo confiável da emissão individual para processar v�
 - [ ] Impedir duplicidades no lote.
 - [ ] Processar linhas válidas mesmo quando outras forem inválidas.
 - [ ] Reutilizar o serviço de emissão individual.
+- [ ] Permitir que o modo web completo reutilize o processamento em lote com acesso autenticado.
 - [ ] Gerar relatório de processamento.
-- [ ] Disponibilizar os certificados em arquivo ZIP.
+- [ ] Gerar os certificados e o arquivo ZIP localmente.
 - [ ] Criar testes automatizados para lotes.
 
 ## v0.3.0 — Interface web
@@ -116,7 +119,6 @@ Objetivo: permitir a personalização dos modelos utilizados nos certificados.
 
 Funcionalidades que poderão ser avaliadas posteriormente:
 
-- autenticação e autorização;
 - múltiplos usuários por organização;
 - envio de certificados por e-mail;
 - armazenamento em serviço de objetos;
